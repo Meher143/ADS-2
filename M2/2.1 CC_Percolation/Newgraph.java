@@ -8,7 +8,7 @@ interface Graph {
      *
      * @return     int
      */
-    int V();
+    int vertices();
     /**
      * Edges.
      *
@@ -101,7 +101,7 @@ class Newgraph implements Graph {
      *
      * @return     int
      */
-    public int V() {
+    public int vertices() {
         return vertices;
     }
     /**
@@ -165,11 +165,11 @@ class Newgraph implements Graph {
     public void display1(final int vert, final int edg,
         final String[] tok) throws Exception {
         if (edg <= 1 && vert <= 1) {
-            System.out.println(V()
+            System.out.println(vertices()
                 + " vertices" + ", " + edges() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(V()
+            System.out.println(vertices()
                 + " vertices" + ", " + edges() + " edges");
             for (int i = 0; i < tok.length; i++) {
             String str = "";
@@ -192,11 +192,11 @@ class Newgraph implements Graph {
     public void display2(final int vert,
         final int edg) throws Exception {
         if (edg <= 1 && vert <= 1) {
-            System.out.println(V()
+            System.out.println(vertices()
                 + " vertices" + ", " + edges() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(V()
+            System.out.println(vertices()
                 + " vertices" + ", " + edges() + " edges");
             int[][] disp = new int[vert][vert];
             for (int i = 0; i  < vert; i++) {
