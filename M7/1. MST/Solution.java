@@ -19,8 +19,10 @@ int edges = Integer.parseInt(sc.nextLine());
 EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertices);
 while (sc.hasNextLine()) {
 	String[] tokens = sc.nextLine().split(" ");
-	Edge e = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
+	Edge e = new Edge(Integer.parseInt(tokens[0]),
+		Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
 	ewg.addEdge(e);
+	
 }
 PrimMST pmst = new PrimMST(ewg);
 System.out.printf("%.5f",pmst.weight());

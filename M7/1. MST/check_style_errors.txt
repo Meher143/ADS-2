@@ -278,9 +278,9 @@ Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:15:25: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:15:34: Expected @param tag for 'args'. [JavadocMethod]
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:21:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:22: Line is longer than 80 characters (found 115). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:26:26: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:27: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:25: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:28:26: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\Solution.java:29: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
