@@ -178,7 +178,7 @@ System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
                 y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " 
+                        System.err.println("Edge "
                             + f + " violates cut optimality conditions");
                         return false;
                     }
