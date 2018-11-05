@@ -83,8 +83,7 @@ public class PrimMST {
                 edgeTo[w] = e;
                 if (pq.contains(w)) {
                     pq.decreaseKey(w, distTo[w]);
-                }
-                else {
+                } else {
                     pq.insert(w, distTo[w]);
                 }
             }
@@ -136,8 +135,8 @@ public class PrimMST {
             totalWeight += e.weight();
         }
         if (Math.abs(totalWeight - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
-                totalWeight, weight());
+System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
+    totalWeight, weight());
             return false;
         }
 
@@ -179,8 +178,8 @@ public class PrimMST {
                 y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println
-                        ("Edge " + f + " violates cut optimality conditions");
+                        System.err.println("Edge " 
+                            + f + " violates cut optimality conditions");
                         return false;
                     }
                 }

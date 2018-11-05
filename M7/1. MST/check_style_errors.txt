@@ -8,11 +8,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:86:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:139: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:183:25: '(' should be on the previous line. [MethodParamPad]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:181: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
