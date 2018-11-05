@@ -11,14 +11,14 @@ public class PrimMST {
      * @param G the edge-weighted graph
      */
     public PrimMST(EdgeWeightedGraph G) {
-        edgeTo = new Edge[G.V()];
-        distTo = new double[G.V()];
-        marked = new boolean[G.V()];
-        pq = new IndexMinPQ<Double>(G.V());
-        for (int v = 0; v < G.V(); v++)
+        edgeTo = new Edge[G.vertex()];
+        distTo = new double[G.vertex()];
+        marked = new boolean[G.vertex()];
+        pq = new IndexMinPQ<Double>(G.vertex());
+        for (int v = 0; v < G.vertex(); v++)
             distTo[v] = Double.POSITIVE_INFINITY;
 
-        for (int v = 0; v < G.V(); v++)      // run from each vertex to find
+        for (int v = 0; v < G.vertex(); v++)      // run from each vertex to find
             if (!marked[v]) prim(G, v);      // minimum spanning forest
 
         // check optimality conditions
@@ -92,7 +92,7 @@ public class PrimMST {
         }
 
         // check that it is acyclic
-        UF uf = new UF(G.V());
+        UF uf = new UF(G.vertex());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
             if (uf.connected(v, w)) {
@@ -115,7 +115,7 @@ public class PrimMST {
         for (Edge e : edges()) {
 
             // all edges in MST except e
-            uf = new UF(G.V());
+            uf = new UF(G.vertex());
             for (Edge f : edges()) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) uf.union(x, y);
