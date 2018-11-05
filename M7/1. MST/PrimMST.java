@@ -136,7 +136,7 @@ public class PrimMST {
             totalWeight += e.weight();
         }
         if (Math.abs(totalWeight - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n", 
+            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
                 totalWeight, weight());
             return false;
         }
