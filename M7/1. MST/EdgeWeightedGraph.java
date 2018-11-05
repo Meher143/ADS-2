@@ -24,16 +24,16 @@ public class EdgeWeightedGraph {
      * Initializes an empty edge-weighted graph with
      * {@code V} vertices and 0 edges.
      *
-     * @param  vertex the number of vertices
+     * @param  V the number of vertices
      * @throws IllegalArgumentException if
      * {@code V < 0}
      */
-    public EdgeWeightedGraph(final int vertex) {
-        if (vertex < 0) {
+    public EdgeWeightedGraph(final int V) {
+        if (V < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
         }
-        this.ver = vertex;
+        this.ver = V;
         this.edge = 0;
         adj = (Bag<Edge>[]) new Bag[ver];
         for (int v = 0; v < ver; v++) {
@@ -47,9 +47,9 @@ public class EdgeWeightedGraph {
      * @param  gph the edge-weighted graph to copy
      */
     public EdgeWeightedGraph(final EdgeWeightedGraph gph) {
-        this(gph.vertex());
+        this(gph.V());
         this.edge = gph.e();
-        for (int v = 0; v < gph.vertex(); v++) {
+        for (int v = 0; v < gph.V(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
             for (Edge e : gph.adj[v]) {
@@ -67,7 +67,7 @@ public class EdgeWeightedGraph {
      *
      * @return the number of vertices in this edge-weighted graph
      */
-    public int vertex() {
+    public int V() {
         return ver;
     }
 
@@ -83,14 +83,14 @@ public class EdgeWeightedGraph {
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
 
     /**
-     * Validate a vertex.
+     * Validate a V.
      *
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
         if (v < 0 || v >= ver) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (ver - 1));
+                "V " + v + " is not between 0 and " + (ver - 1));
         }
     }
 
@@ -112,10 +112,10 @@ public class EdgeWeightedGraph {
     }
 
     /**
-     * Returns the edges incident on vertex {@code v}.
+     * Returns the edges incident on V {@code v}.
      *
-     * @param  v the vertex
-     * @return the edges incident on vertex {@code v} as an Iterable
+     * @param  v the V
+     * @return the edges incident on V {@code v} as an Iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public Iterable<Edge> adj(final int v) {
@@ -124,10 +124,10 @@ public class EdgeWeightedGraph {
     }
 
     /**
-     * Returns the degree of vertex {@code v}.
+     * Returns the degree of V {@code v}.
      *
-     * @param  v the vertex
-     * @return the degree of vertex {@code v}
+     * @param  v the V
+     * @return the degree of V {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int degree(final int v) {
