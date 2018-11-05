@@ -8,28 +8,20 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:29:20: Parameter g should be final. [FinalParameters]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:34: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:37: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:37: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:38: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:44: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:51:50: Parameter s should be final. [FinalParameters]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:65:50: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:69: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:73: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:74: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:96: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:97: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:101: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:109: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:124: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:148: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:155: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:163: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:42: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:50: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:57:50: Parameter s should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:71:50: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:83:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:108: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:109: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:122: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:137: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:161: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:168: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M7\1. MST\PrimMST.java:176: Line is longer than 80 characters (found 96). [LineLength]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 Audit done.
 Starting audit...

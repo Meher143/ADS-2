@@ -2,6 +2,9 @@
  * Class for primitive mst.
  */
 public class PrimMST {
+    /**
+     * { var_description }.
+     */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
     /**
      * { var_description }.
@@ -26,16 +29,19 @@ public class PrimMST {
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param g the edge-weighted graph
      */
-    public PrimMST(EdgeWeightedGraph g) {
+    public PrimMST(final EdgeWeightedGraph g) {
         edgeTo = new Edge[g.vertex()];
         distTo = new double[g.vertex()];
         marked = new boolean[g.vertex()];
         pq = new IndexMinPQ<Double>(g.vertex());
-        for (int v = 0; v < g.vertex(); v++)
+        for (int v = 0; v < g.vertex(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
 
-        for (int v = 0; v < g.vertex(); v++)      // run from each vertex to find
-            if (!marked[v]) prim(g, v);      // minimum spanning forest
+        for (int v = 0; v < g.vertex(); v++) {
+            if (!marked[v]) prim(g, v);
+        }     // run from each vertex to find
+          // minimum spanning forest
 
         // check optimality conditions
         assert check(g);
@@ -66,12 +72,18 @@ public class PrimMST {
         marked[v] = true;
         for (Edge e : g.adj(v)) {
             int w = e.other(v);
-            if (marked[w]) continue;         // v-w is obsolete edge
+            if (marked[w]) {
+                continue;
+            }         // v-w is obsolete edge
             if (e.weight() < distTo[w]) {
                 distTo[w] = e.weight();
                 edgeTo[w] = e;
-                if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-                else                pq.insert(w, distTo[w]);
+                if (pq.contains(w)) {
+                    pq.decreaseKey(w, distTo[w]);
+                }
+                else {
+                    pq.insert(w, distTo[w]);
+                }
             }
         }
     }
@@ -98,8 +110,9 @@ public class PrimMST {
      */
     public double weight() {
         double weight = 0.0;
-        for (Edge e : edges())
+        for (Edge e : edges()) {
             weight += e.weight();
+        }
         return weight;
     }
 
