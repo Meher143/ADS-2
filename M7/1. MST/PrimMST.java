@@ -39,22 +39,25 @@ public class PrimMST {
         }
 
         for (int v = 0; v < g.vertex(); v++) {
-            if (!marked[v]) prim(g, v);
-        }     // run from each vertex to find
+            if (!marked[v]) {
+                prim(g, v);
+            }
+                assert check(g);
+            // run from each vertex to find
           // minimum spanning forest
 
         // check optimality conditions
-        assert check(g);
+        }
     }
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      g     { parameter_description }.
      * @param      s     { parameter_description }.
      */
 
-    private void prim(final EdgeWeightedGraph g, int s) {
+    private void prim(final EdgeWeightedGraph g, final int s) {
         distTo[s] = 0.0;
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
@@ -116,11 +119,10 @@ public class PrimMST {
         return weight;
     }
 
-
     // check optimality conditions (takes time proportional to E V lg* V)
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      g     { parameter_description }.
      *
@@ -165,12 +167,15 @@ public class PrimMST {
             uf = new UF(g.vertex());
             for (Edge f : edges()) {
                 int x = f.either(), y = f.other(x);
-                if (f != e) uf.union(x, y);
+                if (f != e){
+                uf.union(x, y); 
+               }
             }
 
             // check that e is min weight edge in crossing cut
             for (Edge f : g.edges()) {
-                int x = f.either(), y = f.other(x);
+                int x = f.either(), 
+                y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
                         System.err.println("Edge " + f + " violates cut optimality conditions");
