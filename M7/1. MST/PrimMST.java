@@ -169,17 +169,18 @@ public class PrimMST {
             for (Edge f : edges()) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) {
-                uf.union(x, y); 
+                uf.union(x, y);
                }
             }
 
             // check that e is min weight edge in crossing cut
             for (Edge f : g.edges()) {
-                int x = f.either(), 
+                int x = f.either(),
                 y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " + f + " violates cut optimality conditions");
+                        System.err.println
+                        ("Edge " + f + " violates cut optimality conditions");
                         return false;
                     }
                 }
