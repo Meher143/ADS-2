@@ -3,10 +3,23 @@
  */
 public class PrimMST {
     private static final double FLOATING_POINT_EPSILON = 1E-12;
+    /**
+     * { var_description }.
+     */
 
-    private Edge[] edgeTo;        // edgeTo[v] = shortest edge from tree vertex to non-tree vertex
-    private double[] distTo;      // distTo[v] = weight of shortest such edge
-    private boolean[] marked;     // marked[v] = true if v on tree, false otherwise
+    private Edge[] edgeTo;
+    /**
+     * { item_description }.
+     */// edgeTo[v] = shortest edge from tree vertex to non-tree vertex
+    private double[] distTo;
+    /**
+     * { item_description }.
+     */// distTo[v] = weight of shortest such edge
+    private boolean[] marked;
+    /**
+     * { item_description }.
+     */
+    // marked[v] = true if v on tree, false otherwise
     private IndexMinPQ<Double> pq;
 
     /**
@@ -28,8 +41,14 @@ public class PrimMST {
         assert check(G);
     }
 
-    // run Prim's algorithm in graph G, starting from vertex s
-    private void prim(EdgeWeightedGraph G, int s) {
+    /**
+     * { function_description }
+     *
+     * @param      G     { parameter_description }.
+     * @param      s     { parameter_description }.
+     */
+
+    private void prim(final EdgeWeightedGraph G, int s) {
         distTo[s] = 0.0;
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
@@ -37,8 +56,12 @@ public class PrimMST {
             scan(G, v);
         }
     }
-
-    // scan vertex v
+    /**
+     * { function_description }.
+     *
+     * @param      G     { parameter_description }.
+     * @param      v     { parameter_description }.
+     */
     private void scan(final EdgeWeightedGraph G, int v) {
         marked[v] = true;
         for (Edge e : G.adj(v)) {
@@ -82,6 +105,14 @@ public class PrimMST {
 
 
     // check optimality conditions (takes time proportional to E V lg* V)
+
+    /**
+     * { function_description }
+     *
+     * @param      G     { parameter_description }.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     private boolean check(final EdgeWeightedGraph G) {
 
         // check weight
