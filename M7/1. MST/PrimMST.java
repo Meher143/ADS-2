@@ -1,9 +1,24 @@
+/**
+ * Class for primitive mst.
+ */
 public class PrimMST {
     private static final double FLOATING_POINT_EPSILON = 1E-12;
+    /**
+     * { var_description }.
+     */
 
-    private Edge[] edgeTo;        // edgeTo[v] = shortest edge from tree vertex to non-tree vertex
-    private double[] distTo;      // distTo[v] = weight of shortest such edge
-    private boolean[] marked;     // marked[v] = true if v on tree, false otherwise
+    private Edge[] edgeTo;
+    /**
+     * { item_description }.
+     */// edgeTo[v] = shortest edge from tree vertex to non-tree vertex
+    private double[] distTo;
+    /**
+     * { item_description }.
+     */// distTo[v] = weight of shortest such edge
+    private boolean[] marked;
+    /**
+     * { item_description }.
+     */// marked[v] = true if v on tree, false otherwise
     private IndexMinPQ<Double> pq;
 
     /**
