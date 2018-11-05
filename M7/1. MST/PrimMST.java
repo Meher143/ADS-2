@@ -71,7 +71,7 @@ public class PrimMST {
      * @param      g     { parameter_description }.
      * @param      v     { parameter_description }.
      */
-    private void scan(final EdgeWeightedGraph g, int v) {
+    private void scan(final EdgeWeightedGraph g, final int v) {
         marked[v] = true;
         for (Edge e : g.adj(v)) {
             int w = e.other(v);
@@ -108,8 +108,8 @@ public class PrimMST {
     }
 
     /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
+     * Returns the sum of the edge weights in a M S T(or forest).
+     * @return the sum of the edge weights in a M S T(or forest).
      */
     public double weight() {
         double weight = 0.0;
@@ -136,7 +136,8 @@ public class PrimMST {
             totalWeight += e.weight();
         }
         if (Math.abs(totalWeight - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n", totalWeight, weight());
+            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n", 
+                totalWeight, weight());
             return false;
         }
 
@@ -160,14 +161,14 @@ public class PrimMST {
             }
         }
 
-        // check that it is a minimal spanning forest (cut optimality conditions)
+        // check that it is a M S F (cut optimality conditions).
         for (Edge e : edges()) {
 
             // all edges in MST except e
             uf = new UF(g.vertex());
             for (Edge f : edges()) {
                 int x = f.either(), y = f.other(x);
-                if (f != e){
+                if (f != e) {
                 uf.union(x, y); 
                }
             }
