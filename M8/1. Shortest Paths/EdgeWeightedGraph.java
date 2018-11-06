@@ -72,7 +72,7 @@ public class EdgeWeightedGraph {
      *
      * @return the number of vertices in this edge-weighted graph
      */
-    public int vertex() {
+    public int vertices() {
         return ver;
     }
 
