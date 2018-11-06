@@ -1,9 +1,23 @@
 import java.util.Scanner;
+
+/**
+ * Solution class.
+ */
 final class Solution {
+	
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 
 	}
-	public static void main(String[] args) {
+
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String[] ints = sc.nextLine().split(" ");
 		int vertex = Integer.parseInt(ints[0]);

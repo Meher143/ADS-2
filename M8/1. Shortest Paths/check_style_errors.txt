@@ -314,18 +314,14 @@ Starting audit...
 Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:21: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:21:57: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:21:76: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:30: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:7: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:35: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:35:57: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:35:76: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:44: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
