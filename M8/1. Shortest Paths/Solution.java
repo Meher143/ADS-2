@@ -38,12 +38,13 @@ final class Solution {
             ewg.addEdge(e);
         }
         int queries = Integer.parseInt(sc.nextLine());
-        DijkstraSP djk;
+        DijkstrasSP djk;
         for (int i = 0; i < queries; i++) {
             String[] paths = sc.nextLine().split(" ");
             int source = bst.get(paths[0]);
-            djk = new DijkstraSP(ewg, source);
+            djk = new DijkstrasSP(ewg, source);
             System.out.println((int) djk.distance(bst.get(paths[1])));
         }
     }
 }
+

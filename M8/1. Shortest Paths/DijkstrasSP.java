@@ -2,7 +2,7 @@
  *the class for dijkstra's algorithm.
  *to find the shortest path.
  */
-class DijkstraSP {
+class DijkstrasSP {
     /**
      *the distTo array to store.
      *distance from one vertex to another.
@@ -27,16 +27,16 @@ class DijkstraSP {
      * @param      g  graph object.
      * @param      source  The source
      */
-    DijkstraSP(final EdgeWeightedGraph g,
+    DijkstrasSP(final EdgeWeightedGraph g,
                 final int source) {
         graph = g;
-        distTo = new Double[graph.vertices()];
-        edgeTo = new Edge[graph.vertices()];
-        for (int i = 0; i < graph.vertices(); i++) {
+        distTo = new Double[graph.vertex()];
+        edgeTo = new Edge[graph.vertex()];
+        for (int i = 0; i < graph.vertex(); i++) {
             distTo[i] = Double.POSITIVE_INFINITY;
         }
         distTo[source] = 0.0;
-        pq = new IndexMinPQ<Double>(graph.vertices());
+        pq = new IndexMinPQ<Double>(graph.vertex());
         pq.insert(source, distTo[source]);
         while (!pq.isEmpty()) {
             int vertex = pq.delMin();
@@ -71,7 +71,6 @@ class DijkstraSP {
      * @param      v  vertex
      *
      * @return distance between two vertices.
-     * Time complexity is O(1).
      */
     public double distTo(final int v) {
         return distTo[v];
@@ -82,7 +81,6 @@ class DijkstraSP {
      * @param      v another vertex.
      *
      * @return     True if has path to, False otherwise.
-     * Time complexity is O(1).
      */
     public boolean hasPathTo(final int v) {
         return distTo[v] < Double.POSITIVE_INFINITY;
