@@ -1,19 +1,19 @@
-import java.util.Scanner;
-
 /**
- * Solution class.
+ * Scanner import.
+ */
+import java.util.Scanner;
+/**
+ * Class for solution.
  */
 final class Solution {
-
     /**
      * Constructs the object.
      */
     private Solution() {
-
+        //Empty constructor.
     }
-
     /**
-     * main method.
+     * Main function.
      *
      * @param      args  The arguments
      */
@@ -29,11 +29,12 @@ final class Solution {
             bst.put(vertices[i], i);
         }
         Edge e;
-        EdgeWeightedGraph ewg = new EdgeWeightedGraph(vertex);
+        EdgeWeightedGraph ewg =
+        new EdgeWeightedGraph(vertex);
         for (int i = 0; i < edges; i++) {
             String[] tokens = sc.nextLine().split(" ");
             e = new Edge(bst.get(tokens[0]),
-            bst.get(tokens[1]), Double.parseDouble(tokens[2]));
+                bst.get(tokens[1]), Double.parseDouble(tokens[2]));
             ewg.addEdge(e);
         }
         int queries = Integer.parseInt(sc.nextLine());
@@ -42,8 +43,7 @@ final class Solution {
             String[] paths = sc.nextLine().split(" ");
             int source = bst.get(paths[0]);
             djk = new DijkstrasSP(ewg, source);
-            double result = djk.distance(bst.get(paths[1]));
-            System.out.println((int) result);
+            System.out.println((int) djk.distance(bst.get(paths[1])));
         }
     }
 }

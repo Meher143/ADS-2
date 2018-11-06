@@ -168,6 +168,66 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:25: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:39:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:41:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:41:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:42:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:42:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:43:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:44:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:45: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:47: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:52:32: Parameter V should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:52:36: 'V' hides a field. [HiddenField]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:52:36: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:53: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:53: Line is longer than 80 characters (found 109). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:58: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:63: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:70:32: Parameter V should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:70:36: 'V' hides a field. [HiddenField]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:70:36: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:70:39: Parameter E should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:70:43: 'E' hides a field. [HiddenField]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:70:43: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:72: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:72: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:76:29: '0.01' is a magic number. [MagicNumber]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:76:54: '100' is a magic number. [MagicNumber]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:82: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:90: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:91: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:93:32: Parameter in should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:95:13: 'E' hides a field. [HiddenField]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:95:13: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:96: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:96: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:112:32: Parameter G should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:112:52: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:115: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:134:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:143:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:148:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:148:33: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:149: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:150: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:150:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:150:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:157: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:160:25: Parameter e should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:178:39: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:191:26: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:204:25: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:211: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:224: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:229: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:250:29: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\DirectedEdge.java:252:29: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+Audit done.
+Checkstyle ends with 57 errors.
+Starting audit...
 Audit done.
 Starting audit...
 Audit done.
@@ -314,8 +374,8 @@ Starting audit...
 Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
-Audit done.
-Starting audit...
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
