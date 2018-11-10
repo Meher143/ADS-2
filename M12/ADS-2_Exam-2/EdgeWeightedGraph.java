@@ -3,72 +3,43 @@
  */
 public class EdgeWeightedGraph {
     /**
-     * New line.
+     * {Vertices}.
      */
-    private static final String NEWLINE
-    = System.getProperty("line.separator");
+    private int vertices;
     /**
-     * Vertices.
+     * {Edges}.
      */
-    private final int ver;
+    private int edges;
     /**
-     * Edges.
+     * { item_description }.
      */
-    private int edge;
+    private String newLine = System.getProperty("line.separator");
     /**
-     * Adj array of bags.
+     * {Bag array of type Edge}.
      */
     private Bag<Edge>[] adj;
 
     /**
-     * Initializes an empty edge-weighted graph with
-     * {@code V} vertices and 0 edges.
-     *
-     * @param  vertex the number of vertices
-     * @throws IllegalArgumentException if
-     * {@code V < 0}
+     * Initializes an empty edge-weighted graph with {@code v}
+     * vertices and 0 edges.
+     * @param  v the number of vertices
+     * @throws IllegalArgumentException if {@code v < 0}
      */
-    public EdgeWeightedGraph(final int vertex) {
-        if (vertex < 0) {
-            throw new IllegalArgumentException(
-                "Number of vertices must be nonnegative");
-        }
-        this.ver = vertex;
-        this.edge = 0;
-        adj = (Bag<Edge>[]) new Bag[ver];
-        for (int v = 0; v < ver; v++) {
-            adj[v] = new Bag<Edge>();
+    public EdgeWeightedGraph(final int v) {
+        this.vertices = v;
+        this.edges = 0;
+        adj = (Bag<Edge>[]) new Bag[v];
+        for (int i = 0; i < v; i++) {
+            adj[i] = new Bag<Edge>();
         }
     }
-
-    /**
-     * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
-     *
-     * @param  gph the edge-weighted graph to copy
-     */
-    public EdgeWeightedGraph(final EdgeWeightedGraph gph) {
-        this(gph.vertex());
-        this.edge = gph.e();
-        for (int v = 0; v < gph.vertex(); v++) {
-            // reverse so that adjacency list is in same order as original
-            Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : gph.adj[v]) {
-                reverse.push(e);
-            }
-            for (Edge e : reverse) {
-                adj[v].add(e);
-            }
-        }
-    }
-
-
     /**
      * Returns the number of vertices in this edge-weighted graph.
      *
      * @return the number of vertices in this edge-weighted graph
      */
-    public int vertex() {
-        return ver;
+    public int vertices() {
+        return this.vertices;
     }
 
     /**
@@ -76,50 +47,30 @@ public class EdgeWeightedGraph {
      *
      * @return the number of edges in this edge-weighted graph
      */
-    public int e() {
-        return edge;
-    }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
-
-    /**
-     * Validate a vertex.
-     *
-     * @param      v     { parameter_description }
-     */
-    private void validateVertex(final int v) {
-        if (v < 0 || v >= ver) {
-            throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (ver - 1));
-        }
+    public int edge() {
+        return this.edges;
     }
 
     /**
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
      * @param  e the edge
-     * @throws IllegalArgumentException unless
-     * both endpoints are between {@code 0} and {@code V-1}
      */
     public void addEdge(final Edge e) {
         int v = e.either();
         int w = e.other(v);
-        validateVertex(v);
-        validateVertex(w);
         adj[v].add(e);
         adj[w].add(e);
-        edge++;
+        edges++;
     }
 
     /**
      * Returns the edges incident on vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the edges incident on vertex {@code v} as an Iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @return the edges incident on vertex {@code v}
      */
     public Iterable<Edge> adj(final int v) {
-        validateVertex(v);
         return adj[v];
     }
 
@@ -128,29 +79,24 @@ public class EdgeWeightedGraph {
      *
      * @param  v the vertex
      * @return the degree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int degree(final int v) {
-        validateVertex(v);
         return adj[v].size();
     }
 
     /**
      * Returns all edges in this edge-weighted graph.
-     * To iterate over the edges in this edge-
-     * weighted graph, use foreach notation:
-     * {@code for (Edge e : G.edges())}.
      *
      * @return all edges in this edge-weighted graph, as an iterable
      */
     public Iterable<Edge> edges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < ver; v++) {
+        for (int j = 0; j < vertices; j++) {
             int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
+            for (Edge e : adj(j)) {
+                if (e.other(j) > j) {
                     list.add(e);
-                } else if (e.other(v) == v) {
+                } else if (e.other(j) == j) {
                     if (selfLoops % 2 == 0) {
                         list.add(e);
                     }
@@ -160,25 +106,21 @@ public class EdgeWeightedGraph {
         }
         return list;
     }
-
     /**
-     * Returns a string representation of the edge-weighted graph.
-     * This method takes time proportional to <em>E</em> + <em>V</em>.
+     * Returns a string representation of the object.
      *
-     * @return the number of vertices <em>V</em>,
-     * followed by the number of edges <em>E</em>,
-     * followed by the <em>V</em> adjacency lists of edges
+     * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(ver + " " + edge + NEWLINE);
-        for (int v = 0; v < ver; v++) {
+        s.append(vertices + " vertices " + edges + " edges" + newLine);
+        for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
                 s.append(e + "  ");
             }
-            s.append(NEWLINE);
+            s.append(newLine);
         }
-        return s.toString();
+        return s.toString() + "\n";
     }
 }

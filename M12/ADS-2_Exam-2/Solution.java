@@ -37,6 +37,17 @@ private Solution() {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] tokens = sc.nextLine().split(" ");
+			int source = Integer.parseInt(tokens[0]);
+			int destination = Integer.parseInt(tokens[1]);
+			DijkstraUndirectedSP objectDSP = new DijkstraUndirectedSP(edgeGraph, source);
+			if (objectDSP.hasPathTo(destination)) {
+				System.out.println(objectDSP.distTo(destination));
+			} else {
+				System.out.println("No path Found.");
+			}
+
+
 			break;
 
 		case "ViaPaths":

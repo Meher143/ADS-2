@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 6 vertices 6 edges
 0: 0-3 1.00000  0-1 2.00000  
@@ -9,16 +9,16 @@ Expected Output:
 5:
 
 Your Output: 
-6 6
-0: Edge@5d624da6  Edge@1e67b872  
-1: Edge@60addb54  Edge@3f2a3a5  Edge@1e67b872  
-2: Edge@4cb2c100  Edge@6fb554cc  Edge@60addb54  
-3: Edge@6fb554cc  Edge@5d624da6  
-4: Edge@4cb2c100  Edge@3f2a3a5  
+6 vertices 6 edges
+0: 0-3 1.00000  0-1 2.00000  
+1: 1-2 4.00000  1-4 5.00000  0-1 2.00000  
+2: 2-4 1.00000  3-2 3.00000  1-2 4.00000  
+3: 3-2 3.00000  0-3 1.00000  
+4: 2-4 1.00000  1-4 5.00000  
 5:
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 10 vertices 11 edges
 0: 0-7 221.00000  0-4 78.00000  
@@ -33,17 +33,17 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-10 11
-0: Edge@5d624da6  Edge@1e67b872  
-1: Edge@60addb54  Edge@3f2a3a5  Edge@4cb2c100  
-2: Edge@6fb554cc  Edge@614c5515  Edge@77b52d12  
-3: Edge@2d554825  
-4: Edge@68837a77  Edge@77b52d12  Edge@1e67b872  
-5: Edge@68837a77  Edge@614c5515  
-6: Edge@4cb2c100  
-7: Edge@6be46e8f  Edge@2d554825  Edge@60addb54  Edge@3f2a3a5  Edge@5d624da6  
+10 vertices 11 edges
+0: 0-7 221.00000  0-4 78.00000  
+1: 1-7 158.00000  1-7 159.00000  1-6 92.00000  
+2: 2-9 237.00000  2-5 179.00000  2-4 55.00000  
+3: 3-7 205.00000  
+4: 4-5 191.00000  2-4 55.00000  0-4 78.00000  
+5: 4-5 191.00000  2-5 179.00000  
+6: 1-6 92.00000  
+7: 7-9 157.00000  3-7 205.00000  1-7 158.00000  1-7 159.00000  0-7 221.00000  
 8: 
-9: Edge@6be46e8f  Edge@6fb554cc
+9: 7-9 157.00000  2-9 237.00000
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -51,15 +51,15 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-
+No path Found.
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 370.0
 
 Your Output: 
-
+370.0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
