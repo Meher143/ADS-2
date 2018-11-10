@@ -25,10 +25,11 @@ private Solution() {
 		// Parallel Edges are allowed...
 		// Take the Graph input here...
 
-		String caseToGo = null;
+		String caseToGo = sc.nextLine();
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
+		System.out.println(edgeGraph);
 			break;
 
 		case "DirectedPaths":
