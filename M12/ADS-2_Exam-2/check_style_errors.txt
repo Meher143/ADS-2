@@ -1,0 +1,23 @@
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:3: Class Solution should be declared as final. [FinalClass]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:5:1: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:9:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:9:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:9:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:35: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:42: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 110). [LineLength]
+Audit done.
+Checkstyle ends with 10 errors.
+Starting audit...
+Audit done.
