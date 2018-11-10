@@ -17,7 +17,7 @@ private Solution() {
  * @param      args  The arguments
  */
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int vertices = Integer.parseInt(sc.nextLine());
         int edges = Integer.parseInt(sc.nextLine());
@@ -51,7 +51,8 @@ private Solution() {
             String[] tokens = sc.nextLine().split(" ");
             int source = Integer.parseInt(tokens[0]);
             int destination = Integer.parseInt(tokens[1]);
-            DijkstraUndirectedSP objectDSP = new DijkstraUndirectedSP(edgeGraph, source);
+            DijkstraUndirectedSP objectDSP = 
+            new DijkstraUndirectedSP(edgeGraph, source);
             if (objectDSP.hasPathTo(destination)) {
                 System.out.println(objectDSP.distTo(destination));
             } else {
