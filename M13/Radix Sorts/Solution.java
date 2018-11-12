@@ -2,7 +2,12 @@ import java.util.*;
 class Solution {
 	Solution() {
     }
-    public static void main(String[] args) {
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
     	Scanner sc = new Scanner(System.in);
     	int n = Integer.parseInt(sc.nextLine());
     	String[] str = new String[n];

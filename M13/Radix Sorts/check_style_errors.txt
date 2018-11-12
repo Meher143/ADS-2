@@ -68,10 +68,8 @@ Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M13\Radix Sorts\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M13\Radix Sorts\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M13\Radix Sorts\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M13\Radix Sorts\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M13\Radix Sorts\Solution.java:5:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M13\Radix Sorts\StdRandom.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M13\Radix Sorts\StdRandom.java:14: Line has trailing spaces. [RegexpSingleline]
