@@ -19,7 +19,7 @@ public final class Solution {
         //Your code goes here...
         Scanner sc = new Scanner(System.in);
         int flag = 0;
-        for (int i = 1; i < words.length; i++) {
+        for (int i = 0; i < words.length; i++) {
             for (int j = 0; j < words[i].length(); j++) {
                 t.put(words[i].substring(j), flag);
                 flag++;

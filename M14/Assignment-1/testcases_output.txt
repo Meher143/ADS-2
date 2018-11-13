@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 ABACUS
 ABAND
@@ -8,6 +8,7 @@ ABASE
 ABASES
 
 Your Output: 
+ABACUS
 ABAND
 ABANDON
 ABANDONED
