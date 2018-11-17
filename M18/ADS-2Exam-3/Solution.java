@@ -92,7 +92,7 @@ public class Solution {
 		String[] dictionary = in.readAllStrings();
 		for (int i = 0; i < dictionary.length; i++) {
 			if (st.get(dictionary[i].toLowerCase()) == null) {
-				st.put(dictionary[i].toLowerCase(), 0);
+				st.put(dictionary[i].toLowerCase(), 1);
 			} else {
 				st.put(dictionary[i].toLowerCase(), st.get(dictionary[i].toLowerCase() + 1));
 			}
@@ -111,11 +111,16 @@ class T9 {
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
+		//dict = new TST();
+		//this.tempst = st;
+		//for (String word: st.keys()) {
+			//dict.put(word, st.get(word));
 		return null;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
+		//return dict.keysWithPrefix(prefix);
 		return null;
 	}
 
