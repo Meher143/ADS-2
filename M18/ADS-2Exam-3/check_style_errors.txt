@@ -377,19 +377,18 @@ Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:20: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:107:66: Parameter file should be final. [FinalParameters]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:108: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:116: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:128:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:129:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:131:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:131:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:131:15: Parameter st should be final. [FinalParameters]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:172: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:172:76: Parameter k should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:20: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:109:29: Parameter file should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:110: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:119: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:131:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:132:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:139:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:139:15: Parameter st should be final. [FinalParameters]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:180: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\Solution.java:180:76: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

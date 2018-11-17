@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+class Solution {
 
     /**
      * { function_description }.
@@ -17,7 +17,8 @@ public class Solution {
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+            BinarySearchST<String, 
+            Integer> hash = loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
                 System.out.println(hash.get(key));
@@ -104,14 +105,16 @@ public class Solution {
      * @return     { description_of_the_return_value }.
      */
 
-    public static BinarySearchST<String, Integer> loadDictionary(String file) {
+    public static BinarySearchST<String,
+    Integer> loadDictionary(String file) {
         BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
         // your code goes here
         In in = new In(file);
         String[] dictionary = in.readAllStrings();
         for (int i = 0; i < dictionary.length; i++) {
             if (st.get(dictionary[i].toLowerCase()) == null) {
-                st.put(dictionary[i].toLowerCase(), 1);
+                st.put(dictionary[i].toLowerCase(),
+                 1);
             } else {
                 st.put(dictionary[i].toLowerCase(), st.get(dictionary[i].toLowerCase()) + 1);
             }
@@ -120,13 +123,18 @@ public class Solution {
     }
 
 }
+
 /**
  * Class for t 9.
  */
-
 class T9 {
     private TST dict;
     private BinarySearchST<String, Integer> tempst;
+    /**
+     * Constructs the object.
+     *
+     * @param      st    { parameter_description }.
+     */
 
     public T9(BinarySearchST<String, Integer> st) {
         // your code goes here
