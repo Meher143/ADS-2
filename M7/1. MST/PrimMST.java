@@ -109,6 +109,7 @@ public class PrimMST {
     /**
      * Returns the sum of the edge weights in a M S T(or forest).
      * @return the sum of the edge weights in a M S T(or forest).
+     * Time complexity for this method is O(1).
      */
     public double weight() {
         double weight = 0.0;
