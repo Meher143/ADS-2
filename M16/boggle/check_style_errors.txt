@@ -1,7 +1,5 @@
 Starting audit...
-[ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M16\boggle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M16\boggle\BoggleBoard.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\DELL\Desktop\ADS-2\ADS Assignments\M16\boggle\BoggleBoard.java:12:5: Missing a Javadoc comment. [JavadocVariable]
