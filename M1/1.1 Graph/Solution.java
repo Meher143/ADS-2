@@ -1,47 +1,31 @@
 import java.util.Scanner;
 /**
- * Class for solution.
+ * Solution class.
  */
 final class Solution {
     /**
-     * Constructs the object.
+     *an empty constructor.
      */
     private Solution() {
-
     }
     /**
-     * Main function.
+     *the main to read the input.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String type = sc.nextLine();
-        int nvertices = Integer.parseInt(sc.nextLine());
-        int nedges = Integer.parseInt(sc.nextLine());
-        String[] keys = sc.nextLine().split(",");
-        Newgraph g = new Newgraph(nvertices);
-        while (sc.hasNext()) {
-            String[] conn = sc.nextLine().split(" ");
-            g.addEdge(Integer.parseInt(conn[0]),
-                Integer.parseInt(conn[1]));
-        }
         switch (type) {
-            case "List":
-            try {
-                g.display1(nvertices, nedges, keys);
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
+        case "List":
+            Graph graphObj = new Graph(sc);
+            System.out.println(graphObj);
             break;
-            case "Matrix":
-            try {
-                g.display2(nvertices, nedges);
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
+        case "Matrix":
+            GraphMatrix graphMat = new GraphMatrix(sc);
+            graphMat.print();
             break;
-            default:
+        default:
             break;
         }
     }
