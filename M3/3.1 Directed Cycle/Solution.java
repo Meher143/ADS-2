@@ -1,34 +1,33 @@
 import java.util.Scanner;
 /**
- * { item_description }.
+ * Class for solution.
  */
-final class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
-private Solution() {
-
-}
-/**
- * { function_description }.
- *
- * @param      args  The arguments
- */
-public static void main(final String[] args) {
+    private Solution() {
+    }
+    /**
+     * main method that drives the program.
+     * @param      args  The arguments
+     * Time complexity for this method is O(N).
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int nvert = Integer.parseInt(sc.nextLine());
-        int nedge = Integer.parseInt(sc.nextLine());
-        Digraph d = new Digraph(nvert);
-        for (int i = 0; i < nedge; i++) {
-            String[] str = sc.nextLine().split(" ");
-            d.addEdge(Integer.parseInt(str[0]),
-                Integer.parseInt(str[1]));
+        int vertices = Integer.parseInt(sc.nextLine());
+        int edges = Integer.parseInt(sc.nextLine());
+        Digraph d = new Digraph(vertices);
+        for (int i = 0; i < edges; i++) {
+            String[] inp = sc.nextLine().split(" ");
+            d.addEdge(Integer.parseInt(inp[0]), Integer.parseInt(inp[1]));
         }
-        DirectedCycle cyc = new DirectedCycle(d);
-        if (cyc.hasCycle()) {
+        DirectedCycle dc = new DirectedCycle(d);
+        if (dc.hasCycle()) {
             System.out.println("Cycle exists.");
         } else {
             System.out.println("Cycle doesn't exists.");
         }
     }
 }
+

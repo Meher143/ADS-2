@@ -23,35 +23,36 @@ public class DirectedCycle {
      * Determines whether the digraph {@code G}
      * has a directed cycle and, if so,
      * finds such a cycle.
-     * @param dg the digraph
+     * @param g the digraph
      */
-    public DirectedCycle(final Digraph dg) {
-        marked  = new boolean[dg.vert()];
-        onStack = new boolean[dg.vert()];
-        edgeTo  = new int[dg.vert()];
-        for (int v = 0; v < dg.vert(); v++) {
+    public DirectedCycle(final Digraph g) {
+        marked  = new boolean[g.vertices()];
+        onStack = new boolean[g.vertices()];
+        edgeTo  = new int[g.vertices()];
+        for (int v = 0; v < g.vertices(); v++) {
             if (!marked[v] && cycle == null) {
-                dfs(dg, v);
+                dfs(g, v);
             }
         }
     }
     /**
      * check that algorithm computes either
      * the topological order or finds a directed cycle.
-     * @param      dg     G of type Digraph.
+     * @param      g     g of type Digraph.
      * @param      v     v of type int.
+     * Time complexity for this method is O(E) where E
+     * is no of edges.
      */
-    private void dfs(final Digraph dg, final int v) {
+    private void dfs(final Digraph g, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : dg.adj(v)) {
-            // short circuit if directed cycle found
+        for (int w : g.adj(v)) {
             if (cycle != null) {
                 return;
-            } else if (!marked[w]) { // found new vertex, so recur
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(dg, w);
-            } else if (onStack[w]) {  // trace back directed cycle
+                dfs(g, w);
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -63,9 +64,10 @@ public class DirectedCycle {
         onStack[v] = false;
     }
     /**
-     * Does the digraph have a directed cycle?
+     * Does the digraph have a directed cycle?.
      * @return {@code true} if the digraph has
      * a directed cycle, {@code false} otherwise
+     * Time complexity for this method is O(1).
      */
     public boolean hasCycle() {
         return cycle != null;
@@ -76,8 +78,10 @@ public class DirectedCycle {
      * @return a directed cycle (as an iterable)
      * if the digraph has a directed cycle,
      *    and {@code null} otherwise
+     * Time complexity for this method is O(1).
      */
     public Iterable<Integer> cycle() {
         return cycle;
     }
 }
+
