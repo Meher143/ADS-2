@@ -36,7 +36,7 @@ public class DirectedCycle {
     }
     /**
      * dfs method.
-     *Time complexity : O(V).
+     *Time complexity : O(E) where E is number of edges.
      * @param      g digraph
      * @param      v integer variable.
      */
